@@ -6,9 +6,7 @@ public class Main {
             if (a<10001){
                 answer[self(i)] = 1;
             }
-        }
-        for(int i=0;i<10000;i++){
-        	if(answer[i]==0) {
+            if(answer[i]==0) {
         		System.out.println(i);
         	}
         }

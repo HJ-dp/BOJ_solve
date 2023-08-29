@@ -1,10 +1,10 @@
 # [level 0] 외계어 사전 - 120869 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120869?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120869) 
 
 ### 성능 요약
 
-메모리: 74.8 MB, 시간: 0.23 ms
+메모리: 78.3 MB, 시간: 0.04 ms
 
 ### 구분
 

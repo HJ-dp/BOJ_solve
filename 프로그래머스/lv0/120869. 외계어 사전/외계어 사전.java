@@ -11,7 +11,6 @@ class Solution {
                 }  
             }
             if (cnt == spell.length){
-                System.out.println("ddd");
                 answer = 1;
             }
         }

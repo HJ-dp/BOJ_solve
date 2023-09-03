@@ -1,10 +1,10 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		String s = sc.next();
+	public static void main(String[] args) throws IOException {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(bf.readLine());
+		String s = bf.readLine();
 		String[] temp = s.split("");
         long answer = 0;
 		for(int i =0;i<temp.length;i++) {

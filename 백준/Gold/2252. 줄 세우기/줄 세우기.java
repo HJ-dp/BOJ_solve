@@ -28,13 +28,11 @@ public class Main {
 			int t = q.poll();
             System.out.print(t+" ");
 			for(int i=0;i<edges[t].size();i++){
-				if(edges[t].get(i)>=1) {
 					int y = edges[t].get(i);
 					indegree[y]--;
 					if(indegree[y]==0) {
 						q.add(y);
-					}
-				}//연결확인
+				}
 			}//연결끊는 작업
 		}
     }

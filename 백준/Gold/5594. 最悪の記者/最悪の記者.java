@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	public static int N, M, indegree[],cnt,cc,answer[], a[];
+	public static int N, M, indegree[], cnt, answer[], a[];
     public static ArrayList<Integer>[] arr;
-    public static boolean zero, ex;
+    public static boolean ex;
     public static Queue<Integer> q = new LinkedList<>();
     public static HashMap<Integer,Integer> hs = new HashMap<>();
 	public static StringBuilder sb = new StringBuilder();
@@ -29,18 +29,10 @@ public class Main {
             indegree[b]++;
             arr[a].add(b);
         }
-        for(int i=1;i<=N;i++){
-            if(!arr[i].isEmpty()){
-                cc++;
-            }
-        }
 
         for(int i=1;i<=N;i++){
             if(indegree[i]==0){
                 q.add(i);
-            }
-            if(hs.containsKey(indegree[i])){
-                zero = true;
             } else {
                 hs.put(indegree[i],0);
             }
@@ -59,14 +51,12 @@ public class Main {
                 }
             }
         }
-        int c = 0;
         for(int i=0;i<answer.length;i++){
             if(answer[i]==0){
-                c++;
                 answer[i] = cnt++;
             }
         }
-        // if(c >= 1){ex=true;}
+
         for(int i=0;i<answer.length;i++){
             a[answer[i]]= i+1;
         }

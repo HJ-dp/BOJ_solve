@@ -3,6 +3,7 @@ import java.io.*;
 
 public class Main {
     static int N, M, arr[];
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         //가지고 있는 카드
@@ -18,8 +19,10 @@ public class Main {
         temp = bf.readLine().split(" ");
         for(int i=0;i<M;i++){
             int a = Integer.parseInt(temp[i]);
-            System.out.print(bs(a)+" ");
+            sb.append(bs(a)).append("\n");
         }
+
+        System.out.println(sb);
         
     }
 
